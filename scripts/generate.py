@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Generate podcast-show-notes output."""
+"""podcast-show-notes — Show notes generator from audio transcripts. Timestamps, key points, links."""
 import sys, json, argparse
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Show notes generator from audio transcripts. Timestamps, key points, links.")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
-    result = {"name": "podcast-show-notes", "generated": True}
+    
+    result = {"tool": "podcast-show-notes", "status": "ready", "version": "1.0.0", "author": "Jose Zuma"}
+    
     if args.json:
         print(json.dumps(result, indent=2))
     else:
-        print(f"{name}: ready")
+        print(f"{result['tool']} v{result['version']} — {result['status']}")
 
 if __name__ == "__main__":
     main()

@@ -12,12 +12,22 @@
 ```bash
 git clone https://github.com/josezuma/podcast-show-notes.git
 cd podcast-show-notes
-python3 scripts/generate.py
+Generate structured show notes from a transcript file.
+```
+
+## Demo
+
+```bash
+Generate structured show notes from a transcript file.
+python3 scripts/generate.py transcript.txt
+Outputs: title, timestamped segments, key takeaways, links, guest bio.
 ```
 
 ## Related
 
-
+- [yc-pitch-deck-max](https://github.com/josezuma/yc-pitch-deck-max)
+- [yc-content-framework](https://github.com/josezuma/yc-content-framework)
+- [+17 more pitch deck tools](https://github.com/josezuma?tab=repositories)
 
 ## License
 
